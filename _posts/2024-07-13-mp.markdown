@@ -1,12 +1,12 @@
 ---
-layout:post
-title:"今天星期六"
-author:"Brant"
-header-style:text
-catalog:true
+layout: post
+title: "今天星期六"
+author: "Brant"
+header-style: text
+catalog: true
 tags:
-  -web
-  -JavaScript
+  - web
+  - JavaScript
 ---
 
 # 今天星期六
@@ -34,3 +34,4 @@ tags:
 ---
 
 愿我们早日再见，继续书写属于我们的美好故事。
+
