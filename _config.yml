@@ -1,6 +1,6 @@
 # Site settings
 title: Brant Blog
-SEOTitle: Brant的博客 | Brant Blog
+SEOTitle: Brant Blog
 header-img: img/home-bg.jpg
 email: 03brant@gmail.com
 description: "这是Brant的博客，笑对万事，阳和启蛰，品物皆春"
@@ -69,8 +69,8 @@ netease_comment: false
 # ba_track_id: [your track id]
 
 # Google Analytics
-ga_track_id: "UA-49627206-1" # Format: UA-xxxxxx-xx
-ga_domain: huangxuan.me
+ga_track_id: "G-CC4ZE1R5BS" # Format: UA-xxxxxx-xx
+ga_domain: www.uniqueuny.chat
 
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
