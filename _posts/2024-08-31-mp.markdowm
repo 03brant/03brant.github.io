@@ -56,10 +56,10 @@ catalog: true
     /* 添加多个背景图片的轮播 */
     @keyframes changeBackground {
         0% {
-            background-image: url('/assets/images/background1.jpg');
+            background-image: url('img/post-sample-image.jpg');
         }
         33% {
-            background-image: url('/assets/images/background2.jpg');
+            background-image: url('img/post-sample-image.jpg');
         }
         66% {
             background-image: url('/assets/images/background3.jpg');
