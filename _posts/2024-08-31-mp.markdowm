@@ -65,7 +65,7 @@ catalog: true
             background-image: url('/img/76b02fb8ae09733e4b11b88e51fdaa2.jpg');
         }
         100% {
-            background-image: url('/assets/images/background1.jpg');
+            background-image: url('/img/686dfd99f9977c0bad88208abd0229c.jpg');
         }
     }
 
