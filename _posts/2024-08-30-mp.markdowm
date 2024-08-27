@@ -23,8 +23,8 @@ date: 2024-08-30
             flex: 1; /* 使每个子div占据相同的宽度 */
             text-align: center; /* 内容水平居中 */
             margin: 5px; /* 每个div之间的间距 */
-            background-size: cover; /* 背景图片自适应填充 */
-            background-position: center; /* 背景图片居中 */
+            background-size: contain; /* 背景图片自适应填充 */
+            background-position:top center; /* 背景图片居中 */
             color: white; /* 文字颜色为白色，确保在背景图片上可见 */
             height: 100%; /* 确保每个div的高度与父容器一致 */
             display: flex; /* 使用 Flexbox 使内容在水平和垂直方向都居中 */
