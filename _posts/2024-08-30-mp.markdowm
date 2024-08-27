@@ -23,8 +23,8 @@ date: 2024-08-30
             flex: 1; /* 使每个子div占据相同的宽度 */
             text-align: center; /* 内容水平居中 */
             margin: 5px; /* 每个div之间的间距 */
-            background-size: 100% 100%; /* 背景图片缩放到与容器完全一致的大小 */
-            background-position: center; /* 背景图片居中 */
+            background-size: contain; /* 背景图片缩放到与容器完全一致的大小 */
+            background-position: top center; /* 背景图片居中 */
             background-repeat: no-repeat; /* 避免背景图片重复 */
             color: white; /* 文字颜色为白色，确保在背景图片上可见 */
             height: 100%; /* 确保每个div的高度与父容器一致 */
