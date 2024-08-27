@@ -35,7 +35,7 @@ date: 2024-08-30
             background-image: url('/img/a3c6489898a0eab8b641325de0ae488.jpg'); /* 替换为你的图片路径 */
         }
         .header > div:nth-child(2) {
-            background-image: url('https://img0.baidu.com/it/u=3569066416,3506148795&fm=253&fmt=auto&app=138&f=JPEG?w=875&h=500'); /* 替换为你的图片路径 */
+            background-image: url('img/76b02fb8ae09733e4b11b88e51fdaa2.jpg'); /* 替换为你的图片路径 */
         }
         .header > div:nth-child(3) {
             background-image: url('image3.jpg'); /* 替换为你的图片路径 */
