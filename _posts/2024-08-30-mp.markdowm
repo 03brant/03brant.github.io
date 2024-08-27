@@ -35,10 +35,10 @@ date: 2024-08-30
             background-image: url('/img/a3c6489898a0eab8b641325de0ae488.jpg'); /* 替换为你的图片路径 */
         }
         .header > div:nth-child(2) {
-            background-image: url('img/76b02fb8ae09733e4b11b88e51fdaa2.jpg'); /* 替换为你的图片路径 */
+            background-image: url('/img/76b02fb8ae09733e4b11b88e51fdaa2.jpg'); /* 替换为你的图片路径 */
         }
         .header > div:nth-child(3) {
-            background-image: url('image3.jpg'); /* 替换为你的图片路径 */
+            background-image: url('/img/686dfd99f9977c0bad88208abd0229c.jpg'); /* 替换为你的图片路径 */
         }
         .container {
             background-image: url('https://xlzx.nchu.edu.cn/upload/xlzx/contentmanage/article/image/2024/02/28/a76502c0a5e44664a5bfa6fe58f5dcfb.png'); /* 替换为你的背景图片路径 */
