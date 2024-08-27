@@ -4,28 +4,48 @@ title: "uny生日快乐"
 date: 2024-08-30
 ---
 
-<!-- 你的HTML内容 -->
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>生日快乐</title>
+    <title>生日快乐！！！</title>
+    <link rel="icon" href="https://i.52112.com/icon/jpg/256/20190124/28966/1439632.jpg" type="image/x-icon">
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f3f4f6;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            color: #333;
+        .header {
+            display: flex; /* 使用 Flexbox 布局 */
+            justify-content: space-between; /* 块之间均匀分布 */
+            align-items: center; /* 垂直方向上居中对齐 */
+            padding: 10px;
+            height: 300px; /* 设置容器高度 */
+        }
+        .header > div {
+            flex: 1; /* 使每个子div占据相同的宽度 */
+            text-align: center; /* 内容水平居中 */
+            margin: 5px; /* 每个div之间的间距 */
+            background-size: cover; /* 背景图片自适应填充 */
+            background-position: center; /* 背景图片居中 */
+            color: white; /* 文字颜色为白色，确保在背景图片上可见 */
+            height: 100%; /* 确保每个div的高度与父容器一致 */
+            display: flex; /* 使用 Flexbox 使内容在水平和垂直方向都居中 */
+            justify-content: center; /* 水平方向上居中对齐 */
+            align-items: center; /* 垂直方向上居中对齐 */
+        }
+        .header > div:nth-child(1) {
+            background-image: url('https://inews.gtimg.com/om_bt/OGlQWfsaAoKkuCcMZ2o9IVEPqd-72DQy5EAN02XBHUwfYAA/641'); /* 替换为你的图片路径 */
+        }
+        .header > div:nth-child(2) {
+            background-image: url('https://img0.baidu.com/it/u=3569066416,3506148795&fm=253&fmt=auto&app=138&f=JPEG?w=875&h=500'); /* 替换为你的图片路径 */
+        }
+        .header > div:nth-child(3) {
+            background-image: url('image3.jpg'); /* 替换为你的图片路径 */
         }
         .container {
+            background-image: url('https://xlzx.nchu.edu.cn/upload/xlzx/contentmanage/article/image/2024/02/28/a76502c0a5e44664a5bfa6fe58f5dcfb.png'); /* 替换为你的背景图片路径 */
+        
+            background-position: center; /* 背景图片居中显示 */
             text-align: center;
-            background-color: #ffffff;
+            background-color:rgba(255, 255, 255, 0.5);
             padding: 40px;
             border-radius: 15px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -45,21 +65,59 @@ date: 2024-08-30
             color: #ff69b4;
             margin-top: 20px;
         }
-        .author {
-            margin-top: 20px;
-            font-style: italic;
-            color: #888;
+        #intro-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background-color: black;
+        }
+        #main-content {
+            display: none;
+        }
+        .hidden {
+            display: none;
         }
     </style>
 </head>
 <body>
+    <!-- 开头动画视频 -->
+    <div id="intro-video">
+        <video id="video" width="100%" height="100%" autoplay muted>
+            <source src="f866f81677ddac525bec9e1fdaf1351c.mp4" type="video/mp4">
+            你的浏览器不支持HTML5视频标签。
+        </video>
+    </div>
+    <div class="header">
+       <div>1</div>
+       <div>2</div>
+       <div>3</div>
+    </div>
     <div class="container">
         <h1>生日快乐！</h1>
         <div class="birthday-cake">🎂</div>
-        <p>愿你拥有一个美好的一天，充满爱与喜悦。</p>
+        <p>少想少内耗,多喜乐长安宁</p>
         <p>愿你的每个愿望都能实现，每个梦想都能成真。</p>
-        <div class="author">—— 你的朋友</div>
+        <div >点击有惊喜</div>
     </div>
+    <script>
+        const video = document.getElementById('video');
+        const introVideo = document.getElementById('intro-video');
+        const mainContent = document.getElementById('main-content');
+
+        // 当视频播放结束时，隐藏视频并显示内容
+        video.onended = function() {
+            introVideo.classList.add('hidden');
+            mainContent.style.display = 'block';
+        };
+
+        // 点击视频时也可以跳过动画，直接显示内容
+        introVideo.addEventListener('click', function() {
+            introVideo.classList.add('hidden');
+            mainContent.style.display = 'block';
+        });
+    </script>
 </body>
 </html>
-
