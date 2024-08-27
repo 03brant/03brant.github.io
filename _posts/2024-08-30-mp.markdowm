@@ -5,6 +5,61 @@ date: 2024-08-30
 ---
 
 <!-- 你的HTML内容 -->
-<h1>uny生日快乐</h1>
-<p>这里是你的文章内容。</p>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生日快乐</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+        .container {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            color: #ff69b4;
+        }
+        p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            color: #555;
+        }
+        .birthday-cake {
+            font-size: 5em;
+            color: #ff69b4;
+            margin-top: 20px;
+        }
+        .author {
+            margin-top: 20px;
+            font-style: italic;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>生日快乐！</h1>
+        <div class="birthday-cake">🎂</div>
+        <p>愿你拥有一个美好的一天，充满爱与喜悦。</p>
+        <p>愿你的每个愿望都能实现，每个梦想都能成真。</p>
+        <div class="author">—— 你的朋友</div>
+    </div>
+</body>
+</html>
 
