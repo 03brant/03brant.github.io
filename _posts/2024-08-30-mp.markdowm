@@ -13,44 +13,66 @@ date: 2024-08-30
     <link rel="icon" href="https://i.52112.com/icon/jpg/256/20190124/28966/1439632.jpg" type="image/x-icon">
     <style>
         .header {
-            display: flex; /* 使用 Flexbox 布局 */
-            justify-content: space-between; /* 块之间均匀分布 */
-            align-items: center; /* 垂直方向上居中对齐 */
-            padding: 10px;
-            height: 300px; /* 设置容器高度 */
-        }
-        .header > div {
-            flex: 1; /* 使每个子div占据相同的宽度 */
-            text-align: center; /* 内容水平居中 */
-            margin: 5px; /* 每个div之间的间距 */
-            background-size: 100% 100%; /* 背景图片缩放到与容器完全一致的大小 */
-            background-position: center; /* 背景图片居中 */
-            background-repeat: no-repeat; /* 避免背景图片重复 */
-            color: white; /* 文字颜色为白色，确保在背景图片上可见 */
-            height: 100%; /* 确保每个div的高度与父容器一致 */
-            display: flex; /* 使用 Flexbox 使内容在水平和垂直方向都居中 */
-            justify-content: center; /* 水平方向上居中对齐 */
-            align-items: center; /* 垂直方向上居中对齐 */
-        }
-        .header > div:nth-child(1) {
-            background-image: url('/img/a3c6489898a0eab8b641325de0ae488.jpg'); /* 替换为你的图片路径 */
-        }
-        .header > div:nth-child(2) {
-            background-image: url('/img/76b02fb8ae09733e4b11b88e51fdaa2.jpg'); /* 替换为你的图片路径 */
-        }
-        .header > div:nth-child(3) {
-            background-image: url('/img/686dfd99f9977c0bad88208abd0229c.jpg'); /* 替换为你的图片路径 */
-        }
-        .container {
-            background-image: url('https://xlzx.nchu.edu.cn/upload/xlzx/contentmanage/article/image/2024/02/28/a76502c0a5e44664a5bfa6fe58f5dcfb.png'); /* 替换为你的背景图片路径 */
-        
-            background-position: center; /* 背景图片居中显示 */
-            text-align: center;
-            background-color:rgba(255, 255, 255, 0.5);
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-        }
+    display: flex; /* 使用 Flexbox 布局 */
+    justify-content: flex-start; /* 块之间紧密排列 */
+    align-items: center; /* 垂直方向上居中对齐 */
+    padding: 0; /* 移除容器的内边距 */
+    height: 420px; /* 设置容器高度 */
+}
+
+.header > div {
+    flex: 1; /* 使每个子div占据相同的宽度 */
+    text-align: center; /* 内容水平居中 */
+    margin: 0; /* 移除每个 div 之间的外边距 */
+    background-size: cover; /* 使背景图片完全覆盖 */
+    background-repeat: no-repeat; /* 防止背景图片重复 */
+    background-position: center; /* 背景图片居中对齐 */
+    color: white; /* 文字颜色为白色，确保在背景图片上可见 */
+    height: 100%; /* 确保每个 div 的高度与父容器一致 */
+    display: flex; /* 使用 Flexbox 使内容在水平和垂直方向都居中 */
+    justify-content: center; /* 水平方向上居中对齐 */
+    align-items: center; /* 垂直方向上居中对齐 */
+}
+
+/* 每个 div 的背景图片 */
+.header > div:nth-child(1) {
+    background-image: url('/img/a3c6489898a0eab8b641325de0ae488.jpg');
+}
+
+.header > div:nth-child(2) {
+    background-image: url('/img/76b02fb8ae09733e4b11b88e51fdaa2.jpg');
+}
+
+.header > div:nth-child(3) {
+    background-image: url('/img/686dfd99f9977c0bad88208abd0229c.jpg');
+}
+
+
+.container {
+    display: flex; /* 使用 Flexbox 布局 */
+    height: 400px; /* 设置容器高度，根据需要调整 */
+    margin-top: -31px;
+}
+
+.ye {
+    flex: 1; /* 左边块占据剩余空间 */
+    background-image: url('https://photo-assets.usopen.org/images/pics/large/b_USTA1618779_20240829_USO_DN1_1139.jpg'); /* 替换为你的背景图片路径 */
+    background-size: cover; /* 背景图片覆盖整个块 */
+    background-position: center; /* 背景图片居中对齐 */
+    background-repeat: no-repeat; /* 背景图片不重复 */
+}
+
+.text-content {
+    flex: 1; /* 右边文本部分占据剩余空间 */
+    background-color: pink; /* 粉红色背景 */
+    padding: 20px; /* 内边距，确保内容不贴边 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 垂直方向居中对齐 */
+    align-items: center; /* 水平方向居中对齐 */
+    text-align: center; /* 文字居中对齐 */
+}
+
         h1 {
             font-size: 3em;
             margin: 0;
@@ -86,22 +108,25 @@ date: 2024-08-30
 <body>
     <!-- 开头动画视频 -->
     <div id="intro-video">
-        <video id="video" width="100%" height="100%" autoplay muted>
+        <video id="video" width="100%" height="100%" controls>
             <source src="/f866f81677ddac525bec9e1fdaf1351c.mp4" type="video/mp4">
             你的浏览器不支持HTML5视频标签。
         </video>
     </div>
     <div class="header">
-       <div>1</div>
-       <div>2</div>
-       <div>3</div>
+       <div></div>
+       <div></div>
+       <div></div>
     </div>
     <div class="container">
-        <h1>生日快乐！</h1>
-        <div class="birthday-cake">🎂</div>
-        <p>少想少内耗,多喜乐长安宁</p>
-        <p>愿你的每个愿望都能实现，每个梦想都能成真。</p>
-        <div >点击有惊喜</div>
+        <div class="ye"></div>
+        <div class="text-content">
+            <h1>XYX生日快乐！！！(●'◡'●)</h1>
+            <div class="birthday-cake">🎂</div>
+            <p>要少想少内耗,多喜乐长安宁</p>
+            <p>二十岁了耶，网球越打越棒，每天笑嘻嘻！</p>
+            <div>阳和启蛰✌✌✌</div>
+        </div>
     </div>
     <script>
         const video = document.getElementById('video');
