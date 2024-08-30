@@ -103,6 +103,32 @@ date: 2024-08-31
         .hidden {
             display: none;
         }
+/* 针对屏幕宽度小于768px（如手机）进行优化 */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* 将header改为纵向排列 */
+        height: auto; /* 让高度自适应内容 */
+    }
+
+    .container {
+        flex-direction: column; /* 将container改为纵向排列 */
+        height: auto; /* 让高度自适应内容 */
+    }
+
+    .text-content {
+        padding: 10px; /* 调整内边距 */
+        font-size: 0.9em; /* 调整文字大小 */
+    }
+
+    h1 {
+        font-size: 2em; /* 调整标题大小 */
+    }
+
+    .birthday-cake {
+        font-size: 4em; /* 调整生日蛋糕表情符号的大小 */
+    }
+}
+
     </style>
 </head>
 <body>
