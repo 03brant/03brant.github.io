@@ -108,8 +108,11 @@ date: 2024-08-31
     .header {
         flex-direction: column;
         min-height: 300px; /* 设置一个合理的最小高度 */
+        background-size: cover;
     }
-
+    .header > div {
+                background-size: cover; /* 确保背景图片覆盖整个子容器 */
+            }
     .container {
         flex-direction: column;
         min-height: 300px; /* 设置一个合理的最小高度 */
