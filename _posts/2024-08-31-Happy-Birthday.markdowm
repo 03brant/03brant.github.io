@@ -110,7 +110,6 @@ date: 2024-08-31
     <div id="intro-video">
         <video id="video" width="100%" height="100%" controls>
             <source src="/f866f81677ddac525bec9e1fdaf1351c.mp4" type="video/mp4">
-            你的浏览器不支持HTML5视频标签。
         </video>
     </div>
     <div class="header">
@@ -124,7 +123,7 @@ date: 2024-08-31
             <h1>XYX生日快乐！！！(●'◡'●)</h1>
             <div class="birthday-cake">🎂</div>
             <p>要少想少内耗,多喜乐长安宁</p>
-            <p>二十岁了耶，网球越打越棒，每天笑嘻嘻！</p>
+            <p>二十岁了噢，哈哈哈，网球越打越棒，还有记得每天笑嘻嘻！</p>
             <div>阳和启蛰✌✌✌</div>
         </div>
     </div>
