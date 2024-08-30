@@ -106,13 +106,13 @@ date: 2024-08-31
 /* 针对屏幕宽度小于768px（如手机）进行优化 */
 @media (max-width: 768px) {
     .header {
-        flex-direction: column; /* 将header改为纵向排列 */
-        height: auto; /* 让高度自适应内容 */
+        flex-direction: column;
+        min-height: 300px; /* 设置一个合理的最小高度 */
     }
 
     .container {
-        flex-direction: column; /* 将container改为纵向排列 */
-        height: auto; /* 让高度自适应内容 */
+        flex-direction: column;
+        min-height: 300px; /* 设置一个合理的最小高度 */
     }
 
     .text-content {
